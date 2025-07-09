@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .loading-box {
+    width: 50px;
+    height: 50px;
+    background-color: cyan;
+    animation: bounce 1s infinite ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0% {
+        left: 0;
+        right: 0;
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+      left: 100px;
+      right: 200px;
+    }
+    100% {
+      transform: translateY(0);
+      left: 250px;
+      right: 350px;
+    }
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    position: relative;
+    animation: moveBox 2s infinite alternate ease-in-out;
+  }
+  
+  @keyframes moveBox {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 300px; /* Qancha uzoqqa harakat qilishini sozlaydi */
+    }
+  }
+  
